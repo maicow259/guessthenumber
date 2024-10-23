@@ -1,14 +1,14 @@
 extends Control
 
-
+signal start_game
+signal go_to_options
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scene/game_scene.tscn")
-
+	emit_signal("start_game")
 
 
 func _on_options_pressed() -> void:
-	pass # Replace with function body.
+	emit_signal("go_to_options")
 
 
 func _on_quit_pressed() -> void:
