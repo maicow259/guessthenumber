@@ -95,5 +95,6 @@ text = "Try a number!"
 label_settings = SubResource("LabelSettings_umoe5")
 horizontal_alignment = 1
 
+[connection signal="pressed" from="guess-quit/VBoxContainer/Guess" to="." method="_on_guess_pressed"]
 [connection signal="pressed" from="guess-quit/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
 [connection signal="text_submitted" from="Imput Margim/Imput Player" to="." method="_on_imput_player_text_submitted"]
